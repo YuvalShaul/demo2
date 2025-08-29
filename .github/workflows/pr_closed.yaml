@@ -1,0 +1,11 @@
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+    build-image:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "pr closed"
+              run: |
+                "echo called"
