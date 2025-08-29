@@ -8,4 +8,4 @@ jobs:
         steps:
             - name: "pr closed"
               run: |
-                "echo called"
+                echo "called"
