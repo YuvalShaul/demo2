@@ -1,0 +1,14 @@
+on:
+  pull_request:
+    types: [opened]
+  push:
+    branches: [main]
+
+
+jobs:
+    build-image:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "pr opened"
+              run: |
+                echo "called"

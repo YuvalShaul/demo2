@@ -1,0 +1,11 @@
+on:
+  push:
+    branches: [main]
+
+jobs:
+    build-image:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "push main"
+              run: |
+                echo "called"

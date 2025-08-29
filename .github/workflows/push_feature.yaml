@@ -1,0 +1,11 @@
+on:
+  push:
+    branches: [feature-*]
+
+jobs:
+    build-image:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "push feature branch"
+              run: |
+                echo "called"

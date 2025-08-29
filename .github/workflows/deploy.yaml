@@ -1,0 +1,16 @@
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [main]
+
+jobs:
+    build-image:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "build docker image"
+              run: |
+                "echo building"
+            - name: "Deploying"
+              run: |
+                "echo Deploying"

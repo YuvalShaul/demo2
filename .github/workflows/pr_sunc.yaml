@@ -1,0 +1,12 @@
+on:
+  pull_request:
+    types: [synchronize]
+
+
+jobs:
+    build-image:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "pr pull_request sync"
+              run: |
+                echo "called"
